@@ -650,4 +650,8 @@ img{
     border: 1px solid rgba(46, 47, 66, 0.40);
     cursor: pointer;
 }
+
+.review-form-checkbox:checked + .review-form-checkbox-label > .review-form-own-checkbox{
+    background-color: #404BBF;
+}
 /* ==========/MODAL WINDOW STYLES========== */
