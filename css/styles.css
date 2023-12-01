@@ -635,6 +635,7 @@ img{
 .modal-close-btn:focus{
     background-color: #404BBF;
     fill: #ffffff;
+    border: none;
 } 
 
 .modal-close-btn-icon{
@@ -652,7 +653,7 @@ img{
 }
 
 .review-form-field-wrapper{
-    margin-bottom: 16px
+    margin-bottom: 8px;
 }
 
 .review-form-field-label{
