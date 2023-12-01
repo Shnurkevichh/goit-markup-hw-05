@@ -57,23 +57,23 @@ img{
 
 .logo {
     color: var(--IRIS, #4D5AE5);
-        font-family: Raleway, sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;    
-        margin-right: 76px;;    
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;    
+    margin-right: 76px;;    
 }
 
 .text-logo {
     color: var(--NAVY-BLUE, #2E2F42);
-        font-family: Raleway, sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.16;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
 }
 
@@ -100,8 +100,8 @@ img{
 }
 
 .link-studio{
-position: relative;
-color: #404bbf;
+    position: relative;
+    color: #404bbf;
 }
 
 .link-studio::after {
@@ -132,10 +132,10 @@ color: #404bbf;
 
 .address-link:hover,
 .address-link:focus{
-        font-weight: 400;
-        justify-content: center;
-        flex-shrink: 0;
-        color: #404BBF;
+    font-weight: 400;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #404BBF;
 }
 
 .container{
@@ -184,36 +184,36 @@ color: #404bbf;
 
 .main-title{
     color: var(--WHITE, #FFF);
-        font-weight: 700;
-        font-size: 56px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 48px;
-        max-width: 496px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
+    max-width: 496px;
 }
 
 .button{
     color: var(--WHITE, #FFF);
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        font-family: "Roboto", sans-serif;
-        background: var(--IRIS, #4D5AE5);
-        font-weight: 500;
-        cursor: pointer;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        border-radius: 4px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        padding: 16px 32px;
-        min-width: 169px;
-        height: 56px;
-        border: none;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-family: "Roboto", sans-serif;
+    background: var(--IRIS, #4D5AE5);
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -319,9 +319,9 @@ color: #404bbf;
 
 
 .team-text-container{
-   text-align: center;
-   padding: 32px 0;
-   margin-bottom: 8px;
+    text-align: center;
+    padding: 32px 0;
+    margin-bottom: 8px;
 }
 
 .svg-list{
@@ -430,12 +430,12 @@ color: #404bbf;
 
 .logo-footer{
     color: var(--CLOUD, #F4F4FD);
-        font-family: Raleway, sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+     font-family: Raleway, sans-serif;
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 1.17;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
 }
 
 .text-footer{
@@ -492,8 +492,72 @@ color: #404bbf;
 }
 .svg-list-link-footer:hover,
 .svg-list-link-footer:focus{
-background-color: #31D0AA;
+    background-color: #31D0AA;
 }
 
 
 /* ==========/FOOTER========== */
+
+
+/* ==========BACKDROP STYLES========== */
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+/* ==========/BACKDROP STYLES========== */
+
+
+/* ==========MODAL WINDOW STYLES========== */
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    height: 584px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+}
+
+ .modal-close-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    background-color: #E7E9FC;
+    border: none;
+    line-height: 0; 
+    fill: #2E2F42;
+    border-radius: 50%;
+    border:rgba(0, 0, 0, 0.10);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+    fill:#FFFFFF;
+    background-color: #404BBF;
+} 
+
+.modal-close-btn-icon{
+    padding: 8px;
+    
+}
+/* ==========/MODAL WINDOW STYLES========== */
